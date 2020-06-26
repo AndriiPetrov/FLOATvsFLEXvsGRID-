@@ -1,0 +1,54 @@
+/* Navigatoin */
+.navigation {
+  float: right;
+}
+
+.navigation li {
+  display: inline-block;
+}
+
+nav {
+  clear: both;
+}
+
+/* Main Content */
+.left-aside, .right-aside {
+  float: left;
+  width: 20%;
+  height: max-content;
+}
+
+.main {
+  width: calc(100% - 40% - 160px);
+  float: left;
+}
+
+.left-aside > div:nth-child(1) {
+  margin: 10px auto;
+  height: 50px;
+}
+.portrait {
+  height: 100px;
+}
+
+.right-aside > ul {
+  margin-bottom: 20px;
+}
+
+.other-stuff {
+  padding-top: 10px;
+}
+
+.main h5 {
+  margin-bottom: 10px;
+}
+
+@media all and (max-width: 600px) {
+  .left-aside, .right-aside, .main {
+    width: calc(100% - 40px);
+    margin: 10px auto;
+  }
+  .left-aside {
+    margin-top: 20px;
+  }
+}
